@@ -7,10 +7,10 @@ class Header extends HTMLElement {
 		this.innerHTML = `
 			<header class="main-header">
                 <h1>RH Improvements</h1>
+				<h5>Get the most out of your games!</h4>
 				<nav class="nav main-nav">
                     <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
+					<a href="faq.html">FAQ</a>
 				</nav>
 			</header>
             <br>

@@ -40,8 +40,8 @@ footer a:hover {
 }
 
 .div-main {
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .div-main li {
@@ -67,8 +67,18 @@ footer a:hover {
     margin-right: 5em; */
 }
 
+/* .filters-box {
+    margin-left: 2%;
+    margin-right: 2%;
+} */
+
 .filters-box label {
     display: inline-block;
-    margin-right: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     margin-bottom: 0.5em;
+}
+
+h5 {
+    margin-top: -0.5em;
 }

@@ -8,7 +8,6 @@ class Footer extends HTMLElement {
             <br>
 			<footer class="main-footer">
 				<nav class="nav main-nav">
-                    <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="contact.html">Contact</a>
 				</nav>

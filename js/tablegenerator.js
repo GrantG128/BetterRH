@@ -57,12 +57,13 @@ class TableGenerator extends HTMLElement {
 
     convertRows(rows) {
         let string = ``
-        for (let [index, row] of rows.entries()) {
+        // for (let [index, row] of rows.entries()) {
+        for (let row of rows) {
             if (row == "") {
                 break
             }
             string += `<tr>`
-            string += `<td class="centered">` + (index + 1) + `</td>`
+            string += `<td class="centered">` + row[row.length - 1] + `</td>`
             string += `<td>` + row[0] + `</td>`
             string += `<td>` + row[1] + `</td>`
             if (row[3] != "") {
@@ -92,7 +93,7 @@ class TableGenerator extends HTMLElement {
             <table class="table-sortable" id="table-hacks">
                 <thead>
                     <tr>
-                        <th>Index</th>
+                        <th>Date Added</th>
                         <th>System</th>
                         <th>Original Game</th>
                         <th>Hack</th>
@@ -174,6 +175,8 @@ class TableGenerator extends HTMLElement {
         this.handleTableSorting()
         this.handleExpandableDescriptions()
         this.handleFilters()
+
+        this.sortTableByColumn(document.getElementById("table-hacks"), 0, false)
     }
 }
 

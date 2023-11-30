@@ -53,8 +53,12 @@ td {
     padding: 0.5em;
 }
 
-td:not(:first-child):not(.cell-description) {
+td:not(:first-child):not(:nth-child(2)):not(.cell-description) {
     border-left: 1px solid #e0e0e0;
+}
+
+td:nth-child(1) {
+    border-right: 1px solid #e0e0e0;
 }
 
 .cell-creator {
@@ -69,8 +73,8 @@ td:not(:first-child):not(.cell-description) {
 }
 
 .cell-description {
-    min-width: 15em;
-    /* max-width: 15em; */
+    width: fit-content;
+    /* min-width: 10em; */
     /* white-space: normal; */
     display: -webkit-box;
     -webkit-box-orient: vertical;

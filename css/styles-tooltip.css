@@ -21,7 +21,7 @@
 /* Tooltip text */
 .tooltiptext {
     visibility: hidden;
-    width: 15em;
+    width: 18em;
     /* white-space: nowrap; */
     word-wrap: break-word;
     /* overflow: hidden; */
@@ -35,7 +35,7 @@
     top: -40px;
     /* Adjust the distance from the question mark */
     /* left: 0%; */
-    transform: translateX(-50%) translateY(-70%);
+    transform: translateX(-50%) translateY(-65%);
     opacity: 0;
     transition: opacity 0.3s;
 }
