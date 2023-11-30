@@ -1,0 +1,48 @@
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Question mark style */
+.question-mark {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Tooltip text */
+.tooltiptext {
+    visibility: hidden;
+    width: 15em;
+    /* white-space: nowrap; */
+    word-wrap: break-word;
+    /* overflow: hidden; */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 100;
+    top: -40px;
+    /* Adjust the distance from the question mark */
+    /* left: 0%; */
+    transform: translateX(-50%) translateY(-70%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show tooltip on hover or click */
+.question-mark:hover+.tooltiptext,
+.question-mark:focus+.tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

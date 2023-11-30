@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Rom Hack Improvements</title>
+    <meta name="description" content="A site for improvement hacks">
+    </meta>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-table.css">
+    <link rel="stylesheet" href="css/styles-tooltip.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="js/tablegenerator.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <header-component></header-component>
+    <div class="div-main">
+        <div class="centered">A collection of improvement hacks.<br>Under construction!
+        </div>
+        <div class="centered filters">
+            <h2>Filters</h2>
+            <div class="filters-box">
+                <label class="tooltip">
+                    <input type="checkbox" class="filterCheckbox" checked name="index">
+                    Index
+                    <span class="question-mark">?</span>
+                    <span class="tooltiptext">The index of when the hack was added to the site</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" class="filterCheckbox" checked name="bug_fix">
+                    Bug Fix
+                    <span class="question-mark">?</span>
+                    <span class="tooltiptext">Bug(s) from the original game have been fixed</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" class="filterCheckbox" checked name="relocalization_text_edit">
+                    Relocalization / Text Edit
+                    <span class="question-mark">?</span>
+                    <span class="tooltiptext">Text has been altered to be more accurate to an alternate source, such as the original language's script</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" class="filterCheckbox" checked name="balance_hack">
+                    Balance Hack
+                    <span class="question-mark">?</span>
+                    <span class="tooltiptext">Certain elements have been altered, or new features have been added, to make the game easier or harder</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" class="filterCheckbox" checked name="content_restoration">
+                    Content Restoration
+                    <span class="question-mark">?</span>
+                    <span class="tooltiptext">Unused, beta, or region-specific content has been restored</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" class="filterCheckbox" checked name="connectivity_removal">
+                    Connectivity Requirement Removal
+                    <span class="question-mark">?</span>
+                    <span class="tooltiptext">Content that was previously accessible only through online play, multiplayer, or a peripheral (e.g. GBA e-Reader) can now be accessed through normal means</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" class="filterCheckbox" checked name="controls_edit">
+                    Controls Edit
+                    <span class="question-mark">?</span>
+                    <span class="tooltiptext">Controls have been altered. This includes removing the need for unconventional control methods (e.g. touch screen, accelerometer)</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" class="filterCheckbox" checked name="graphics_edit">
+                    Graphics Edit
+                    <span class="question-mark">?</span>
+                    <span class="tooltiptext">Graphics have been altered. This includes adding color to grayscale games or changing fonts</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" class="filterCheckbox" checked name="hardware_enhancement">
+                    Hardware Enhancement
+                    <span class="question-mark">?</span>
+                    <span class="tooltiptext">More powerful hardware is utilized to make the game run better, such as SNES enhancement chips, newer NES mappers, and Game Boy Color hardware for Game Boy games</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" class="filterCheckbox" checked name="battery_save">
+                    Battery Save Addition
+                    <span class="question-mark">?</span>
+                    <span class="tooltiptext">Save functionality has been added to games that did not previously save progress/scores</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <tablegen-component></tablegen-component>
+    <footer-component></footer-component>
+</body>
+
+</html>

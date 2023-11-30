@@ -1,0 +1,108 @@
+/* Tabel Formatting */
+
+.table-sortable {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    overflow-x: auto;
+    padding-top: 1em;
+    /* border: 10px solid red; */
+    border-collapse: collapse;
+    border: 2px solid #000000;
+}
+
+/* Header Formatting/Logic */
+
+.table-sortable thead {
+    background-color: #337ab7;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* border: 2px solid #000000; */
+    box-shadow: inset 0 1px 0 #000000, inset 0 -1px 0 #000000;
+}
+
+.table-sortable th {
+    cursor: pointer;
+    width: fit-content;
+    border-collapse: collapse;
+    /* overflow-y: auto; */
+    font-size: 0.8em;
+    /* border-bottom: 2px solid #000000; */
+    padding: 0.5em;
+    text-align: left;
+}
+
+table tbody tr {
+    border-bottom: 2px solid #000000;
+}
+
+/* Row Coloring */
+
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+td {
+    padding: 0.5em;
+    border: 1px solid #e0e0e0;
+}
+
+/* Unique Column/Cell Parameters */
+
+.cell-url {
+    color: #404040;
+    /* text-decoration: none; */
+}
+
+.cell-description {
+    min-width: 15em;
+    /* max-width: 15em; */
+    /* white-space: normal; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none;
+    /* line-height: 1.5; */
+    max-height: 4.2em;
+    cursor: pointer;
+}
+
+.cell-description-expanded {
+    overflow: visible;
+    /* white-space: normal; */
+    display: block;
+    /* -webkit-line-clamp: initial; */
+    /* line-height: initial; */
+    max-height: none;
+}
+
+.cell-bool {
+    text-align: center;
+}
+
+/* Sorting Logic */
+
+.table-sortable .th-sort-asc::after {
+    content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+    content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+    margin-left: 5%;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+    background: rgba(0, 0, 0, 0.1);
+}
