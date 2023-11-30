@@ -70,8 +70,8 @@ class TableGenerator extends HTMLElement {
             } else {
                 string += `<td>` + row[2] + `</td>`
             }
-            string += `<td>` + row[4] + `</td>`
-            string += `<td class="cell-description">`+row[5]+`</td>`
+            string += `<td class="cell-creator">` + row[4] + `</td>`
+            string += `<td class="cell-description">` + row[5] + `</td>`
             for (let col = 6; col < row.length - 1; col++) {
                 if (row[col] == "1") {
                     string += `<td class="cell-bool">✔</td>`
@@ -88,35 +88,37 @@ class TableGenerator extends HTMLElement {
 
     async createTable() {
         let fullTable = `
-        <table class="table-sortable" id="table-hacks">
-            <thead>
-                <tr>
-                    <th>Index</th>
-                    <th>System</th>
-                    <th>Original Game</th>
-                    <th>Hack</th>
-                    <th>Creator</th>
-                    <th class="column-description">Description</th>
-                    <th>Bug Fix</th>
-                    <th>Relocalization<br>/ Text Edit</th>
-                    <th>Balance<br>Hack</th>
-                    <th>Content<br>Restoration</th>
-                    <th>Connectivity<br>Requirement<br>Removal</th>
-                    <th>Controls<br>Edit</th>
-                    <th>Graphics<br>Edit</th>
-                    <th>Hardware<br>Enhancement</th>
-                    <th>Battery<br>Save<br>Addition</th>
-                </tr>
-            </thead>
-            <tbody>`
+        <div class="div-table">
+            <table class="table-sortable" id="table-hacks">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>System</th>
+                        <th>Original Game</th>
+                        <th>Hack</th>
+                        <th>Creator</th>
+                        <th>Description</th>
+                        <th>Bug Fix</th>
+                        <th>Relocalization<br>/ Text Edit</th>
+                        <th>Balance<br>Hack</th>
+                        <th>Content<br>Restoration</th>
+                        <th>Connectivity<br>Requirement<br>Removal</th>
+                        <th>Controls<br>Edit</th>
+                        <th>Graphics<br>Edit</th>
+                        <th>Hardware<br>Enhancement</th>
+                        <th>Battery<br>Save<br>Addition</th>
+                    </tr>
+                </thead>
+                <tbody>`
         await this.getRowsFromCSV().then(result => {
             fullTable += result
         }).catch(error => {
             console.error('Error:', error)
         })
         fullTable += `
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
 		`
         this.innerHTML = fullTable
     }
