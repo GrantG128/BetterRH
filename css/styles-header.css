@@ -5,10 +5,10 @@ header {
     text-align: center;
 }
 
-body.dark-mode header {
-    background-color: #1a1a1a;
-    color: #333333;
-}
+/* body.dark-mode header {
+    background-color: #261d1d;
+    color: #bf8f8f;
+} */
 
 header a {
     color: #ffffff;
@@ -16,9 +16,9 @@ header a {
     margin: 0 15px;
 }
 
-body.dark-mode header a {
-    color: #000000;
-}
+/* body.dark-mode header a {
+    color: #bf8f8f;
+} */
 
 header a:hover {
     text-decoration: underline;
@@ -35,6 +35,10 @@ header a:hover {
     /* Change color as needed */
 }
 
+body.dark-mode .dark-mode-toggle {
+    color: #1c1c21;
+}
+
 .toggle-switch {
     display: none;
 }
@@ -49,6 +53,10 @@ header a:hover {
     border-radius: 12px;
 }
 
+body.dark-mode .toggle-label {
+    background-color: #4d4d4d;
+}
+
 .toggle-label:before {
     content: '';
     position: absolute;
@@ -58,10 +66,14 @@ header a:hover {
     /* Width of the switch button */
     height: 22px;
     /* Height of the switch button */
-    background-color: #fff;
+    background-color: #ffffff;
     /* Color of the switch button */
     border-radius: 50%;
     transition: transform 0.3s ease;
+}
+
+body.dark-mode .toggle-label:before {
+    background-color: #1c1c21;
 }
 
 .toggle-switch:checked+.toggle-label:before {

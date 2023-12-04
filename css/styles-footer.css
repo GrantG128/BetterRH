@@ -5,10 +5,10 @@ footer {
     text-align: center;
 }
 
-body.dark-mode footer {
-    background-color: #1a1a1a;
-    color: #000000;
-}
+/* body.dark-mode footer {
+    background-color: #261d1d;
+    color: #bf8f8f;
+} */
 
 footer a {
     color: #ffffff;
@@ -16,9 +16,9 @@ footer a {
     margin: 0 15px;
 }
 
-body.dark-mode footer a {
-    color: #000000;
-}
+/* body.dark-mode footer a {
+    color: #bf8f8f;
+} */
 
 footer a:hover {
     text-decoration: underline;

@@ -17,12 +17,12 @@ class Header extends HTMLElement {
 	}
 
 	connectedCallback() {
-		// <span class="dark-mode-toggle">
-		// 	<input type="checkbox" id="dark-mode-switch" class="toggle-switch">
-		// 		<label for="dark-mode-switch" class="toggle-label"></label>
-		// </span>
 		this.innerHTML = `
 			<header class="main-header">
+				<span class="dark-mode-toggle">
+					<input type="checkbox" id="dark-mode-switch" class="toggle-switch">
+					<label for="dark-mode-switch" class="toggle-label"></label>
+				</span>
                 <h1>BetterRH</h1>
 				<h5>Get the most out of your games!</h4>
 				<nav class="nav main-nav">
@@ -34,7 +34,7 @@ class Header extends HTMLElement {
             <br>
 		`
 
-		// this.handleDarkMode()
+		this.handleDarkMode()
 	}
 }
 

@@ -19,8 +19,8 @@
 }
 
 body.dark-mode .question-mark {
-    background-color: #060606;
-    color: #aaaaaa;
+    background-color: #292929;
+    color: #bf9a6c;
 }
 
 /* Tooltip text */
@@ -38,17 +38,16 @@ body.dark-mode .question-mark {
     position: absolute;
     z-index: 100;
     top: -40px;
-    /* Adjust the distance from the question mark */
     /* left: 0%; */
     transform: translateX(-50%) translateY(-65%);
     opacity: 0;
     transition: opacity 0.3s;
 }
 
-body.dark-mode .tooltiptext {
-    background-color: #ffffff;
-    color: #333333;
-}
+/* body.dark-mode .tooltiptext {
+    background-color: #261d1d;
+    color: #bf8f8f;
+} */
 
 /* Show tooltip on hover or click */
 .question-mark:hover+.tooltiptext,

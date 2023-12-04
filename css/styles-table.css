@@ -26,8 +26,8 @@
 }
 
 body.dark-mode .table-sortable thead {
-    background-color: #1a1f5c;
-    color: #000000;
+    background-color: #133A6E;
+    /* color: #bfbfbf; */
 }
 
 .table-sortable th {
@@ -38,14 +38,6 @@ body.dark-mode .table-sortable thead {
     font-size: 0.8em;
     padding: 0.5em;
     text-align: left;
-}
-
-table tbody tr {
-    color: #000000;
-}
-
-body.dark-mode table tbody tr {
-    color: #ffffff;
 }
 
 table tbody tr:not(:last-child) {
@@ -59,7 +51,7 @@ table tbody tr:nth-child(odd) {
 }
 
 body.dark-mode table tbody tr:nth-child(odd) {
-    background-color: #808080;
+    background-color: #1c1c21;
 }
 
 table tbody tr:nth-child(even) {
@@ -67,7 +59,7 @@ table tbody tr:nth-child(even) {
 }
 
 body.dark-mode table tbody tr:nth-child(even) {
-    background-color: #969696;
+    background-color: #292929;
 }
 
 td {
@@ -78,12 +70,24 @@ td:not(:first-child):not(:nth-child(2)):not(.cell-description) {
     border-left: 1px solid #e0e0e0;
 }
 
+body.dark-mode td:not(:first-child):not(:nth-child(2)):not(.cell-description) {
+    border-left: 1px solid #383838;
+}
+
 td:nth-child(1) {
     border-right: 1px solid #e0e0e0;
 }
 
+body.dark-mode td:nth-child(1) {
+    border-right: 1px solid #383838;
+}
+
 .cell-creator {
     border-right: 1px solid #e0e0e0;
+}
+
+body.dark-mode .cell-creator {
+    border-right: 1px solid #383838;
 }
 
 /* Unique Column/Cell Parameters */
@@ -94,7 +98,7 @@ td:nth-child(1) {
 }
 
 body.dark-mode .cell-url {
-    color: #c0c0c0;
+    color: #b8ab9c;
     /* text-decoration: none; */
 }
 

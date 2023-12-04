@@ -1,5 +1,6 @@
 body {
     background-color: #ffffff;
+    color: #000000;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,7 +8,9 @@ body {
 }
 
 body.dark-mode {
-    background-color: #808080;
+    background-color: #1c1c21;
+    /* color: #bfbfbf; */
+    color: #f0f0f0;
 }
 
 .div-main {
@@ -36,6 +39,10 @@ body.dark-mode {
     margin-bottom: 1em;
     /* margin-left: 5em;
     margin-right: 5em; */
+}
+
+body.dark-mode .filters {
+    border: 1px solid #4d4d4d;
 }
 
 /* .filters-box {
