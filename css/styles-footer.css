@@ -1,0 +1,25 @@
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+body.dark-mode footer {
+    background-color: #1a1a1a;
+    color: #000000;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+body.dark-mode footer a {
+    color: #000000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

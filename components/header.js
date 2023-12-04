@@ -3,7 +3,24 @@ class Header extends HTMLElement {
 		super()
 	}
 
+	handleDarkMode() {
+		const darkModeSwitch = document.getElementById('dark-mode-switch')
+		darkModeSwitch.addEventListener('change', function () {
+			document.body.classList.toggle('dark-mode')
+			localStorage.setItem('darkMode', darkModeSwitch.checked)
+		})
+
+		if (localStorage.getItem('darkMode') === 'true') {
+			document.body.classList.add('dark-mode')
+			darkModeSwitch.checked = 'true'
+		}
+	}
+
 	connectedCallback() {
+		// <span class="dark-mode-toggle">
+		// 	<input type="checkbox" id="dark-mode-switch" class="toggle-switch">
+		// 		<label for="dark-mode-switch" class="toggle-label"></label>
+		// </span>
 		this.innerHTML = `
 			<header class="main-header">
                 <h1>BetterRH</h1>
@@ -12,9 +29,12 @@ class Header extends HTMLElement {
                     <a href="index.html">Home</a>
 					<a href="faq.html">FAQ</a>
 				</nav>
-			</header>
+
+				</header>
             <br>
 		`
+
+		// this.handleDarkMode()
 	}
 }
 

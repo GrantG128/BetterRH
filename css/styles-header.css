@@ -1,0 +1,70 @@
+header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+body.dark-mode header {
+    background-color: #1a1a1a;
+    color: #333333;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+body.dark-mode header a {
+    color: #000000;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.dark-mode-toggle {
+    /* display: flex; */
+    /* align-items: center; */
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 14px;
+    color: #333333;
+    /* Change color as needed */
+}
+
+.toggle-switch {
+    display: none;
+}
+
+.toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    background-color: #cccccc;
+    /* Background color for the switch */
+    border-radius: 12px;
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 22px;
+    /* Width of the switch button */
+    height: 22px;
+    /* Height of the switch button */
+    background-color: #fff;
+    /* Color of the switch button */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle-switch:checked+.toggle-label:before {
+    transform: translateX(26px);
+    /* Position of the switch button when toggled */
+}

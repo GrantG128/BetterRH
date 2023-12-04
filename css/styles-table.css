@@ -18,11 +18,16 @@
 
 .table-sortable thead {
     background-color: #337ab7;
-    color: white;
+    color: #ffffff;
     position: sticky;
     top: 0;
     z-index: 10;
     box-shadow: inset 0 1px 0 #000000, inset 0 -1px 0 #000000;
+}
+
+body.dark-mode .table-sortable thead {
+    background-color: #1a1f5c;
+    color: #000000;
 }
 
 .table-sortable th {
@@ -35,6 +40,14 @@
     text-align: left;
 }
 
+table tbody tr {
+    color: #000000;
+}
+
+body.dark-mode table tbody tr {
+    color: #ffffff;
+}
+
 table tbody tr:not(:last-child) {
     border-bottom: 2px solid #000000;
 }
@@ -45,8 +58,16 @@ table tbody tr:nth-child(odd) {
     background-color: #ffffff;
 }
 
+body.dark-mode table tbody tr:nth-child(odd) {
+    background-color: #808080;
+}
+
 table tbody tr:nth-child(even) {
     background-color: #f0f0f0;
+}
+
+body.dark-mode table tbody tr:nth-child(even) {
+    background-color: #969696;
 }
 
 td {
@@ -69,6 +90,11 @@ td:nth-child(1) {
 
 .cell-url {
     color: #404040;
+    /* text-decoration: none; */
+}
+
+body.dark-mode .cell-url {
+    color: #c0c0c0;
     /* text-decoration: none; */
 }
 
