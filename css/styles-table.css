@@ -27,7 +27,6 @@
 
 body.dark-mode .table-sortable thead {
     background-color: #133A6E;
-    /* color: #bfbfbf; */
 }
 
 .table-sortable th {
@@ -91,16 +90,6 @@ body.dark-mode .cell-creator {
 }
 
 /* Unique Column/Cell Parameters */
-
-.cell-url {
-    color: #404040;
-    /* text-decoration: none; */
-}
-
-body.dark-mode .cell-url {
-    color: #b8ab9c;
-    /* text-decoration: none; */
-}
 
 .cell-description {
     width: fit-content;

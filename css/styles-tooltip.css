@@ -44,11 +44,6 @@ body.dark-mode .question-mark {
     transition: opacity 0.3s;
 }
 
-/* body.dark-mode .tooltiptext {
-    background-color: #261d1d;
-    color: #bf8f8f;
-} */
-
 /* Show tooltip on hover or click */
 .question-mark:hover+.tooltiptext,
 .question-mark:focus+.tooltiptext {

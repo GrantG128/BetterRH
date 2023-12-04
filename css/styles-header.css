@@ -5,10 +5,9 @@ header {
     text-align: center;
 }
 
-/* body.dark-mode header {
-    background-color: #261d1d;
-    color: #bf8f8f;
-} */
+body.dark-mode header {
+    color: #f0f0f0;
+}
 
 header a {
     color: #ffffff;
@@ -16,9 +15,9 @@ header a {
     margin: 0 15px;
 }
 
-/* body.dark-mode header a {
-    color: #bf8f8f;
-} */
+body.dark-mode header a {
+    color: #f0f0f0;
+}
 
 header a:hover {
     text-decoration: underline;

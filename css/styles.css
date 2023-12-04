@@ -9,8 +9,17 @@ body {
 
 body.dark-mode {
     background-color: #1c1c21;
-    /* color: #bfbfbf; */
     color: #f0f0f0;
+}
+
+a {
+    color: #404040;
+    /* text-decoration: none; */
+}
+
+body.dark-mode a {
+    color: #b8ab9c;
+    /* text-decoration: none; */
 }
 
 .div-main {

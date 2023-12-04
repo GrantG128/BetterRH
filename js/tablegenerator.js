@@ -67,7 +67,7 @@ class TableGenerator extends HTMLElement {
             string += `<td>` + row[0] + `</td>`
             string += `<td>` + row[1] + `</td>`
             if (row[3] != "") {
-                string += `<td><a href="` + row[3] + `" target="_blank" class="cell-url">` + row[2] + `</a></td>`
+                string += `<td><a href="` + row[3] + `" target="_blank">` + row[2] + `</a></td>`
             } else {
                 string += `<td>` + row[2] + `</td>`
             }
