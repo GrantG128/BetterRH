@@ -6,6 +6,7 @@ footer {
 }
 
 body.dark-mode footer {
+    background-color: #2e2929;
     color: #f0f0f0;
 }
 
