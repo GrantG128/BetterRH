@@ -11,7 +11,7 @@ class Footer extends HTMLElement {
                     <a href="about.html">About</a>
                     <a href="contact.html">Contact</a>
 				</nav>
-                <small>2023 <a href="https://github.com/Mips96" target="_blank">Mips96</a></small>
+                <small>2023 <a href="https://github.com/GrantG128" target="_blank">GrantG</a></small>
 			</footer>
 		`
 	}
