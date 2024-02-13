@@ -60,3 +60,13 @@ Sega Master System	Asterix & The Great Rescue	Full Pass	https://www.romhacking.n
 Sega Master System	Golden Axe Warrior	No Grind	https://www.romhacking.net/hacks/7278/	Yim	Adds several changes to make the game less grind-heavy: full restore on continue/inn stay, no loss of horns on continue, and earth magic is free to use if it doesn't hit an enemy.	0	0	1	0	0	0	0	0	0	2023/12/16
 Sega Master System	Street Fighter II	World Warrior Hack	https://www.romhacking.net/hacks/7566/	xfixium	Changes several graphics to more accurately match the arcade release. Also includes a <a href='https://www.romhacking.net/hacks/7564/' target='_blank'>Champion Edition</a> variant.	0	0	0	0	0	0	1	0	0	2023/12/16
 Sega Master System	Sonic the Hedgehog	Sonic the Hedgehog - FM	https://www.romhacking.net/hacks/3663/	Valleybell	Adds optional FM music, audio-related optimizations and bug fixes, and additional songs as easter eggs.	1	0	0	0	0	0	0	1	0	2023/12/16
+MSX	Final Fantasy	Final Fantasy I Lite	https://www.romhacking.net/hacks/1924/	JCE3000GT	Several balance changes have been applied to make the game significantly easier.	0	0	1	0	0	0	0	0	0	2024/02/12
+MSX	Fleet Commander 2	Bug Fixes	https://www.romhacking.net/hacks/1281/	FRS	Fixes a crash bug and allows enables on CHGCPU-compatible machines.	1	0	0	0	0	0	0	1	0	2024/02/12
+MSX	Vampire Killer	Improvements	https://www.romhacking.net/hacks/1288/	FRS	Fixes speed/framerate bugs, adjusts control schemes to be more consistent, and enables turbo on CHGCPU-compatible machines.	1	0	0	0	0	1	0	0	0	2024/02/12
+MSX	King's Valley II	Enhancements	https://www.romhacking.net/hacks/1283/	FRS	Improves performance and enables turbo on CHGCPU-compatible machines.	1	0	0	0	0	0	0	1	0	2024/02/12
+MSX	Metal Gear 2	Turbo Fix	https://www.romhacking.net/hacks/1287/	FRS	Enables turbo on CHGCPU-compatible machines.	0	0	0	0	0	0	0	1	0	2024/02/12
+MSX	The Maze of Galious	Improvements	https://www.romhacking.net/hacks/1285/	FRS	Improves performance and enables turbo on CHGCPU-compatible machines.	1	0	0	0	0	0	0	1	0	2024/02/12
+MSX	Metal Gear	Improvements	https://www.romhacking.net/hacks/1286/	FRS	Improves performance, removes region lock, adjusts some graphics, and enables turbo on CHGCPU-compatible machines.	1	0	0	0	0	0	1	1	0	2024/02/12
+MSX	Konami's Soccer	Improvements	https://www.romhacking.net/hacks/1284/	FRS	Enables turbo on CHGCPU-compatible machines.	0	0	0	0	0	0	0	1	0	2024/02/12
+MSX	Gradius 2	Enhancements	https://www.romhacking.net/hacks/1282/	FRS	Improves performance and enables turbo on CHGCPU-compatible machines.	1	0	0	0	0	0	0	1	0	2024/02/12
+MSX	Salamander	Improvements	https://www.romhacking.net/hacks/1289/	FRS	Improves performance and fixes the ripple-laser to behave like the arcade version.	1	0	0	0	0	0	0	0	0	2024/02/12
