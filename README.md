@@ -1,4 +1,4 @@
-# RH-Improvements
- A compendium of improvement-based ROM hacks
+# BetterRH
+ A showcase of improvement-based ROM hacks
 
-https://GrantG128.github.io/BetterRH/
+https://Mode8fx.github.io/BetterRH/
